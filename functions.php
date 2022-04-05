@@ -142,10 +142,13 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
         // var_dump($query);
         // die();
 
-        get_query_var('ordre');
+        $ordre = get_query_var('ordre');
+        //echo "-----ordre =" . $ordre . "--------------<br>";
+        $cle = get_query_var('cletri');
+        //echo "-----cle =" . $cle . "--------------<br>";
 
-        $query->set('order',  'asc');
-        $query->set('orderby', 'title');
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
         $query->set('postperpage', '-1');
     }
 }
@@ -167,8 +170,12 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
 
 
 function cidw_4w4_query_vars($params){
-    var_dump($params);
-    die();
+    //var_dump($params);
+    //die();
+
+    $params[] = "ordre";
+    $params[] = "cletri";
+    return $params;
 }
 
 /*
@@ -183,6 +190,6 @@ add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
 /* le hook pre_get_posts se manifeste juste avant que la requete wp_query soit exectute
     ce hook nous permetteras d'adapter la requete avant de l'executer */
 
-//add_filter('query_vars', 'cidw_4w4_query_vars' );
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 
 ?>
