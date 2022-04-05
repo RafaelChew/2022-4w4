@@ -498,16 +498,19 @@ COMPOSANTES
 
 @keyframes anim-bouton-accueil {
   0% {
-    font-size: 2rem;
+    transform: scale(1);
   }
   15% {
-    font-size: 2.2rem;
+    transform: scale(1.1);
   }
   30% {
-    font-size: 2rem;
+    transform: scale(1);
   }
   45% {
-    font-size: 2.2rem;
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
   }
 }
 
@@ -739,7 +742,7 @@ COMPOSANTES
 }
 
 .accueil__menu__nav__ul .menu-item-description {
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 .accueil__menu__nav__ul .menu-item-icone {
@@ -758,7 +761,7 @@ COMPOSANTES
   flex-direction: column;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   box-shadow: black 2px -1px 10px;
 }
 
@@ -776,6 +779,12 @@ COMPOSANTES
 
 .accueil__menu__nav__ul .menu-item a .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.accueil__menu__nav__ul .menu-item a hr {
+  width: 100%;
+  color: #fff;
+  border-style: solid;
 }
 
 .accueil__menu__nav__ul .menu-item a:hover {

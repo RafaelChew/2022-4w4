@@ -15,16 +15,19 @@
 
 @keyframes anim-bouton-accueil {
     0% {
-        font-size: 2rem;  
+        transform: scale(1);
     }
     15% {
-        font-size: 2.2rem;    
+        transform: scale(1.1);   
     }
     30% {
-        font-size: 2rem;    
+        transform: scale(1);  
     }
     45% {
-        font-size: 2.2rem;    
+        transform: scale(1.1);   
+    }
+    60%{
+        transform: scale(1);
     }
 }
 

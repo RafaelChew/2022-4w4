@@ -132,4 +132,57 @@ function my_register_sidebars() {
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 
+/**
+ * @param : WP_Query $query
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
+    if(!is_admin() && is_main_query() && is_category(array('cours', 'web','jeu','design','utilitaire','creation-3d','video')))
+    {        
+        // var_dump($query);
+        // die();
+
+        get_query_var('ordre');
+
+        $query->set('order',  'asc');
+        $query->set('orderby', 'title');
+        $query->set('postperpage', '-1');
+    }
+}
+
+/*
+  if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    {
+    //$ordre = get_query_var('ordre');
+    $query->set('posts_per_page', -1);
+    // $query->set('orderby', $cle);
+    $query->set('orderby', 'title');
+    // $query->set('order',  $ordre);
+    $query->set('order',  'ASC');
+    // var_dump($query);
+    // die();
+   }
+}
+*/
+
+
+function cidw_4w4_query_vars($params){
+    var_dump($params);
+    die();
+}
+
+/*
+    $params[] = "cletri";
+    $params[] = "ordre";
+    //$params["cletri"] = "title";
+    //var_dump($params); die();
+    return $params;
+}
+*/
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+/* le hook pre_get_posts se manifeste juste avant que la requete wp_query soit exectute
+    ce hook nous permetteras d'adapter la requete avant de l'executer */
+
+//add_filter('query_vars', 'cidw_4w4_query_vars' );
+
 ?>

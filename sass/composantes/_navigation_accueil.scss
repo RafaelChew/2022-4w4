@@ -27,7 +27,7 @@
           .menu-item { // .site__footer__menu__ul .menu-item
 
             &-description{
-                font-size: 0.8em;
+                font-size: 1rem;
             }
 
             &-icone {
@@ -47,7 +47,7 @@
               padding : 0.5rem;
               border-radius: 0.5rem;
 
-              font-size: 2rem;
+              font-size: 1.3rem;
               box-shadow: rgb(0, 0, 0) 2px -1px 10px;
 
                 .accueil__cours .menu-item-icone{
@@ -61,6 +61,12 @@
                 }
                 .accueil__etudiant .menu-item-icone{
                 background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+                }
+
+                hr{
+                    width: 100%;
+                    color: #fff;
+                    border-style: solid;
                 }
             }
 
