@@ -742,6 +742,16 @@ COMPOSANTES
   font-size: 0.8em;
 }
 
+.accueil__menu__nav__ul .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
+}
+
 .accueil__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
@@ -750,16 +760,6 @@ COMPOSANTES
   border-radius: 0.5rem;
   font-size: 2rem;
   box-shadow: black 2px -1px 10px;
-}
-
-.accueil__menu__nav__ul .menu-item a .menu-item-description {
-  font-size: 1rem;
-}
-
-.accueil__menu__nav__ul .menu-item a .menu-item-icone {
-  border: 1px solid #aaa;
-  width: 2rem;
-  height: 2rem;
 }
 
 .accueil__menu__nav__ul .menu-item a .accueil__cours .menu-item-icone {

@@ -30,6 +30,16 @@
                 font-size: 0.8em;
             }
 
+            &-icone {
+                border: 1px solid #aaa;
+                width: 2rem;
+                height: 2rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                margin-top: auto;
+            }
+
             a{ // .site__footer__menu__ul .menu-item a
               display : flex;
               align-items: center;
@@ -39,15 +49,6 @@
 
               font-size: 2rem;
               box-shadow: rgb(0, 0, 0) 2px -1px 10px;
-              
-              .menu-item-description {
-                  font-size: 1rem;
-              }
-              .menu-item-icone{
-                  border: 1px solid #aaa;
-                  width: 2rem;
-                  height: 2rem;
-              }
 
                 .accueil__cours .menu-item-icone{
                     background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
