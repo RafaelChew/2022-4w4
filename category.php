@@ -1,5 +1,9 @@
 <?php get_header() ?>
 <main class="principal">
+
+    <a href="?cletri=title&ordre=asc">Ascendant</a> <br>
+    <a href="?cletri=title&ordre=desc">Desccendant</a> <br>
+
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <?php 

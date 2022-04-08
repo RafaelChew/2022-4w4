@@ -26,7 +26,7 @@
 
           .menu-item { // .site__footer__menu__ul .menu-item
 
-            &-description{
+            &-description{ // s'affiche uniquement si une descrition est associé à l'élément du menu
                 font-size: 1rem;
             }
 
@@ -76,5 +76,8 @@
                 transition : 0.5s;
               }
         }
+    }
+    .current-menu-item {
+
     }
 }

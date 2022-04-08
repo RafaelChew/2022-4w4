@@ -13,10 +13,19 @@
              
             <?php    
                 wp_nav_menu(array(
-                                "menu"=>"menu_accueil",
+                                "menu"=>"accueil",
                                 "container"=>"nav",
                                 "container_class"=>"accueil__menu__nav",
                                 "menu_class"=>"accueil__menu__nav__ul",)); ?>
+
+            <h2>Évenements importants</h2>
+            <?php    
+                wp_nav_menu(array(
+                                "menu"=>"evenement",
+                                "container"=>"nav",
+                                "container_class"=>"accueil__menu__nav",
+                                "menu_class"=>"accueil__menu__nav__ul",)); ?>
+                                
                                 
             <div>
 
