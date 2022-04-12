@@ -120,6 +120,18 @@ function my_register_sidebars() {
 
     register_sidebar(
         array(
+            'id'            => 'footer_ligne_3',
+            'name'          => __( 'Footer ligne #3' ),
+            'description'   => __( 'Sidebar s\'affichant dans une ligne du pied de page' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
             'id'            => 'entete_1',
             'name'          => __( 'Entete #1' ),
             'description'   => __( 'Sidebar s\'affichant dans l\'entete' ),

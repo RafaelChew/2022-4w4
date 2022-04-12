@@ -38,12 +38,18 @@
       display : flex;
       flex-direction : column;
       align-items: center;
+
       section {
         p{
           text-align: center;
         }
         
       }
+
+      .footer__gallerie{
+        border: 3px double rgb(255, 141, 141);
+      }
+
       .footer__auteur {}
       .footer__description {
         margin-top: 3rem;

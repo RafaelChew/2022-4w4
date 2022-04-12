@@ -847,6 +847,10 @@ COMPOSANTES
   text-align: center;
 }
 
+.site__footer__ligne .footer__gallerie {
+  border: 3px double #ff8d8d;
+}
+
 .site__footer__ligne .footer__description {
   margin-top: 3rem;
 }
