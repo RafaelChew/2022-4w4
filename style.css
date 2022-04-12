@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: TP1 ChewCoteR
+theme name: ChewCoteR EX03
 Author: Rafaël Chew-Côté
-Author URI: https://github.com/RafaelChew
-Description: Ce thème est mon premier TP du cours
+Author URI: https://github.com/RafaelChew/2022-4w4/tree/ex03
+Description: Ce thème est l'ex03 
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: cidw-4w4
@@ -651,6 +651,12 @@ COMPOSANTES
   color: #fff;
 }
 
+header span img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+}
+
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -807,6 +813,10 @@ COMPOSANTES
   background-color: #0d0d0d;
   color: #e2e7f8;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
 }
 
 .site__footer__colonne {
@@ -848,6 +858,18 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__gallerie {
+  border: 3px solid #bb2a2a;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.site__footer__ligne .footer__gallerie h2 {
+  text-align: center;
+}
+
+.site__footer__ligne .footer__gallerie:hover {
   border: 3px double #ff8d8d;
 }
 

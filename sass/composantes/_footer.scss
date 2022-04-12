@@ -4,6 +4,11 @@
     color: $color__font-footer;
     padding: 15px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+
     &__colonne { //.site__footer__colonne
         display :flex;
         justify-content: space-between;
@@ -47,6 +52,18 @@
       }
 
       .footer__gallerie{
+        border : 3px solid rgb(187, 42, 42);
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        width: 100%;
+
+          h2{
+            text-align: center;
+          }
+      }
+
+      .footer__gallerie:hover{
         border: 3px double rgb(255, 141, 141);
       }
 

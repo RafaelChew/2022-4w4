@@ -11,11 +11,11 @@
         <!-- </section> -->
     </div>
     <div class="site__footer__ligne">
+        <section class="footer__gallerie">
+            <?php get_sidebar("footer_ligne_3"); ?>
+        </section>
         <section class="footer__description">
             <?php get_sidebar("footer_ligne_2");  ?>
-        </section>
-        <section class="footer__gallerie">
-            <?php get_sidebar("Footer_ligne_3") ?>
         </section>
         <section class="footer__copyright">
             <p>&copy; Tous droit réservé - TIM - Collège de Maisonneuve</p>
