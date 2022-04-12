@@ -751,6 +751,12 @@ header span img {
   font-size: 0.8rem;
 }
 
+@media screen and (min-width: 800px) {
+  .accueil__menu__nav__ul .menu-item-description {
+    font-size: 1rem;
+  }
+}
+
 .accueil__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
@@ -764,20 +770,10 @@ header span img {
   box-shadow: black 2px -1px 10px;
 }
 
-.accueil__menu__nav__ul .menu-item a .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
-}
-
-.accueil__menu__nav__ul .menu-item a .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
-}
-
-.accueil__menu__nav__ul .menu-item a .accueil__aide .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=book-open");
-}
-
-.accueil__menu__nav__ul .menu-item a .accueil__etudiant .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+@media screen and (min-width: 800px) {
+  .accueil__menu__nav__ul .menu-item a {
+    font-size: 1.3rem;
+  }
 }
 
 .accueil__menu__nav__ul .menu-item a hr {

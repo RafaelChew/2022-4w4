@@ -28,7 +28,13 @@
 
             &-description{ // s'affiche uniquement si une descrition est associé à l'élément du menu
                 font-size: 0.8rem;
+
+                @media screen and (min-width : $largeur__media--tablette)
+                {
+                    font-size: 1rem;
+                }
             }
+
 
             // &-icone {
             //     border: 1px solid #aaa;
@@ -57,24 +63,29 @@
               font-size: 1rem;
               box-shadow: rgb(0, 0, 0) 2px -1px 10px;
 
-                .accueil__cours .menu-item-icone{
-                    background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
-                }
-                .accueil__prof .menu-item-icone{
-                background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
-                }
-                .accueil__aide .menu-item-icone{
-                background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=book-open");
-                }
-                .accueil__etudiant .menu-item-icone{
-                background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+              @media screen and (min-width : $largeur__media--tablette)
+              {
+                  font-size: 1.3rem;
+              }
+              
+              hr{
+                width: 100%;
+                color: #fff;
+                border-style: solid;
                 }
 
-                hr{
-                    width: 100%;
-                    color: #fff;
-                    border-style: solid;
-                }
+                // .accueil__cours .menu-item-icone{
+                //     background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+                // }
+                // .accueil__prof .menu-item-icone{
+                // background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
+                // }
+                // .accueil__aide .menu-item-icone{
+                // background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=book-open");
+                // }
+                // .accueil__etudiant .menu-item-icone{
+                // background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+                // }
             }
 
             .menu-item-icone div:first-child {
