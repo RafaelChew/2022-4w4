@@ -719,7 +719,7 @@ COMPOSANTES
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 50vh;
+  height: 65vh;
   padding-bottom: 1rem;
 }
 
@@ -736,32 +736,25 @@ COMPOSANTES
 .accueil__menu__nav__ul {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .accueil__menu__nav__ul .menu-item-description {
-  font-size: 1rem;
-}
-
-.accueil__menu__nav__ul .menu-item-icone {
-  border: 1px solid #aaa;
-  width: 2rem;
-  height: 2rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin-top: auto;
+  font-size: 0.8rem;
 }
 
 .accueil__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
+  height: 100%;
+  margin: none;
+  font-size: 1rem;
   box-shadow: black 2px -1px 10px;
 }
 
